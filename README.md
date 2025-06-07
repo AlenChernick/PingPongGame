@@ -12,12 +12,6 @@
   Enjoy a classic Ping-Pong experience with smooth controls and clean visuals. Challenge yourself or your friends and relive the arcade spirit!
 </p>
 
-<h2>🚀 Download & Play</h2>
-
-<p>
-  👉 <a href="https://filebin.net/efo7hfvg6b7mkxyy/PingPongGameRelease.zip" target="_blank">Download the Game (ZIP)</a>
-</p>
-
 <ul>
   <li>Extract the ZIP file</li>
   <li>Run the executable to start playing</li>
