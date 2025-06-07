@@ -1045,6 +1045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142756296}
+  - component: {fileID: 1142756297}
   m_Layer: 0
   m_Name: Field
   m_TagString: Untagged
@@ -1071,6 +1072,21 @@ Transform:
   - {fileID: 1785150712}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1142756297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142756295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fdecf9c4edb234cbc14a9f5c4979e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScoreText: {fileID: 705204727}
+  enemyScoreText: {fileID: 834518336}
+  scoreToWin: 5
 --- !u!1001 &1212394843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1704,6 +1720,7 @@ GameObject:
   - component: {fileID: 1785150715}
   - component: {fileID: 1785150714}
   - component: {fileID: 1785150716}
+  - component: {fileID: 1785150717}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1807,7 +1824,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1785150715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1869,6 +1886,20 @@ MonoBehaviour:
   movementSpeed: 400
   extraSpeedPerHit: 50
   maxExtraSpeed: 1000
+--- !u!114 &1785150717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785150711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82cfe51dfe76b8a4bbdd7883044d7d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballMovement: {fileID: 1785150716}
+  scoreController: {fileID: 1142756297}
 --- !u!1 &1786480759
 GameObject:
   m_ObjectHideFlags: 0
