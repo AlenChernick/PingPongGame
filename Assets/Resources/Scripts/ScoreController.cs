@@ -16,7 +16,8 @@ public class ScoreController : MonoBehaviour
     {
         if (playerScore >= scoreToWin)
         {
-            GameManager.instance.SetWinner("Player");
+            string playerName = GameManager.instance.GetPlayerName();
+            GameManager.instance.SetWinner(playerName);
             SceneManager.LoadScene("GameOver");
         }
         else if (enemyScore >= scoreToWin)
