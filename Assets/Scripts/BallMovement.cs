@@ -17,6 +17,7 @@ public class BallMovement : MonoBehaviour
     public IEnumerator StartBallMovement(bool isStartingPlayer = true)
     {
         hitCounter = 0;
+
         yield return new WaitForSeconds(2);
 
         if (isStartingPlayer)
