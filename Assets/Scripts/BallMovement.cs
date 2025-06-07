@@ -14,8 +14,21 @@ public class BallMovement : MonoBehaviour
         StartCoroutine(StartBallMovement());
     }
 
+    void PositionBall(bool isStartingPlayer)
+    {
+        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
+
+
+        if (isStartingPlayer)
+            gameObject.transform.position = new Vector3(-100, 0, 0);
+        else
+            gameObject.transform.position = new Vector3(100, 0, 0);
+    }
+
     public IEnumerator StartBallMovement(bool isStartingPlayer = true)
     {
+        PositionBall(isStartingPlayer);
+
         hitCounter = 0;
 
         yield return new WaitForSeconds(2);
