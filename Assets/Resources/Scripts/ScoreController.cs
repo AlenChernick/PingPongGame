@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -14,8 +14,16 @@ public class ScoreController : MonoBehaviour
 
     void Update()
     {
-        if (playerScore >= scoreToWin || enemyScore >= scoreToWin)
+        if (playerScore >= scoreToWin)
+        {
+            GameManager.instance.SetWinner("Player");
             SceneManager.LoadScene("GameOver");
+        }
+        else if (enemyScore >= scoreToWin)
+        {
+            GameManager.instance.SetWinner("Enemy");
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     private void FixedUpdate()

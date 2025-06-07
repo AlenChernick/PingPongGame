@@ -385,7 +385,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 94e0c233e881fab44806cbd02eceaab9, type: 3}
   m_Resource: {fileID: 8300000, guid: 94e0c233e881fab44806cbd02eceaab9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 632011439}
   - component: {fileID: 632011441}
   - component: {fileID: 632011440}
+  - component: {fileID: 632011442}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -684,7 +685,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632011436}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2bb14fcc78775d4080878067d14bfa3, type: 3}
   m_Name: 
@@ -717,6 +718,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &632011442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632011436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d2b5bc08e3a65408ef96dece594a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 200
+  ball: {fileID: 1785150711}
 --- !u!1 &705204727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +1180,51 @@ RectTransform:
   m_AnchoredPosition: {x: 548, y: -119}
   m_SizeDelta: {x: 485.7162, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1138794662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138794664}
+  - component: {fileID: 1138794663}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1138794663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138794662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae53df557b0b2b64892adba97372dc90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winningPlayerName: 
+--- !u!4 &1138794664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138794662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 213.44751, y: -107.04063, z: -15.394836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142756295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScoreText: {fileID: 705204727}
   enemyScoreText: {fileID: 834518336}
-  scoreToWin: 5
+  scoreToWin: 2
 --- !u!1001 &1212394843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1885,7 +1945,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 7bee95fc79e63f74988d78f019c1dc91, type: 3}
   m_Resource: {fileID: 8300000, guid: 7bee95fc79e63f74988d78f019c1dc91, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2715,3 +2775,4 @@ SceneRoots:
   - {fileID: 1142756296}
   - {fileID: 1786480763}
   - {fileID: 1007199656}
+  - {fileID: 1138794664}
