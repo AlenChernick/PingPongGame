@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreController : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class ScoreController : MonoBehaviour
     void Update()
     {
         if (playerScore >= scoreToWin || enemyScore >= scoreToWin)
-            Debug.Log("Game Won");
+            SceneManager.LoadScene("GameOver");
     }
 
     private void FixedUpdate()

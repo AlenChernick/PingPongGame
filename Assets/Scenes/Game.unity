@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScoreText: {fileID: 705204727}
   enemyScoreText: {fileID: 834518336}
-  scoreToWin: 5
+  scoreToWin: 1
 --- !u!1001 &1212394843
 PrefabInstance:
   m_ObjectHideFlags: 0
