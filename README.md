@@ -12,11 +12,6 @@
   Enjoy a classic Ping-Pong experience with smooth controls and clean visuals. Challenge yourself or your friends and relive the arcade spirit!
 </p>
 
-<ul>
-  <li>Extract the ZIP file</li>
-  <li>Run the executable to start playing</li>
-</ul>
-
 <h2>🛠 Built With</h2>
 
 <ul>
